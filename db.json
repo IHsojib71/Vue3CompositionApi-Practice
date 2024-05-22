@@ -7,7 +7,8 @@
             "price": 1200,
             "brand": "Apple",
             "time":"12:30",
-            "date": "10 June, 2024"
+            "date": "10 June, 2024",
+            "description": "lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, lorem ipsum dolor sit amet"
         },
         {
             "id": 2,
@@ -16,7 +17,8 @@
             "price": 1200,
             "brand": "Apple",
             "time":"2:30",
-            "date": "12 June, 2024"
+            "date": "12 June, 2024",
+            "description": "lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, lorem ipsum dolor sit amet"
         },
         {
             "id": 3,
@@ -25,7 +27,9 @@
             "price": 1200,
             "brand": "Apple",
             "time":"1:30",
-            "date": "13 June, 2024"
+            "date": "13 June, 2024",
+            "description": "lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet, lorem ipsum dolor sit amet"
+
         }
 
     ]
