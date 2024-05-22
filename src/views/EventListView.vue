@@ -1,65 +1,19 @@
 <script setup>
 import EventCard from '@/components/EventCard.vue'
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+import EventServices from '@/services/EventServices.js'
 
-const events = ref([
-  {
-  id: 4544,
-  category: 'Laptop Flash Sale',
-  title: 'Macbook Pro 2021',
-  price: 1200,
-  brand: 'Apple',
-  time:'12:30',
-  date: '10 June, 2024',
+const events = ref(null)
 
-  },
-
-  {
-  
-  id: 4555,
-  category: 'Laptop Flash Sale',
-  title: 'Macbook Pro 2021',
-  price: 1200,
-  brand: 'Apple',
-  time:'12:30',
-  date: '10 June, 2024',
-
-  },
-  {
-  
-  id: 4534,
-  category: 'Laptop Flash Sale',
-  title: 'Macbook Pro 2021',
-  price: 1200,
-  brand: 'Apple',
-  time:'12:30',
-  date: '10 June, 2024',
-
-  },
-  {
-  
-  id: 4344,
-  category: 'Laptop Flash Sale',
-  title: 'Macbook Pro 2021',
-  price: 1200,
-  brand: 'Apple',
-  time:'12:30',
-  date: '10 June, 2024',
-
-  },
-  {
-  
-  id: 4244,
-  category: 'Laptop Flash Sale',
-  title: 'Macbook Pro 2021',
-  price: 1200,
-  brand: 'Apple',
-  time:'12:30',
-  date: '10 June, 2024',
-
-  },
-
-])
+onMounted(() => {
+    EventServices.getEvents()
+    .then((response) => {
+      events.value = response.data;
+    })
+    .catch((error) => {
+      console.log(error);
+    })
+})
 </script>
 
 <template>
