@@ -1,0 +1,32 @@
+{
+    "events":[
+        {
+            "id": 1,
+            "category": "Laptop Flash Sale",
+            "title": "Macbook Pro 2021",
+            "price": 1200,
+            "brand": "Apple",
+            "time":"12:30",
+            "date": "10 June, 2024"
+        },
+        {
+            "id": 2,
+            "category": "Mobile Flash Sale",
+            "title": "Iphone 16",
+            "price": 1200,
+            "brand": "Apple",
+            "time":"2:30",
+            "date": "12 June, 2024"
+        },
+        {
+            "id": 3,
+            "category": "Desktop Flash Sale",
+            "title": "iMac Pro",
+            "price": 1200,
+            "brand": "Apple",
+            "time":"1:30",
+            "date": "13 June, 2024"
+        }
+
+    ]
+}
